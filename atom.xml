@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.takeItIzzy.com/"/>
-  <updated>2019-07-26T06:55:46.149Z</updated>
+  <updated>2019-07-26T07:03:46.155Z</updated>
   <id>http://www.takeItIzzy.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.takeItIzzy.com/2019/07/26/%E4%BB%8E%E4%BB%8A%E5%A4%A9%E8%B5%B7%E8%AE%B0%E5%BD%95%E6%88%91%E7%9A%84%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
     <id>http://www.takeItIzzy.com/2019/07/26/从今天起记录我的前端学习之路/</id>
     <published>2019-07-26T05:22:13.438Z</published>
-    <updated>2019-07-26T06:55:46.149Z</updated>
+    <updated>2019-07-26T07:03:46.155Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: 从今天起记录我的前端学习之路<br>date: 2019-07-26 13:22:13</p><h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>从今天起，我要开始记录我自己的前端学习之路了。</p><p>其实我不完全是前端的小白，断断续续知识也学了不少了，只是前端知识面覆盖太广，而我学习时间拖的太长，好多都已经遗忘了，所以一直都想找个机会从头把所有知识点都巩固一下。</p><p>前两天翻知乎，看到一个问题——有哪些适合前端程序员浏览的网站，有答案推荐了百度前端学院，我就想正好利用这个平台好好巩固一下我的基础知识。今天花了一上午搭建了这个个人网站，希望可以将我的学习之路好好地记录下来。</p><p>我喜欢前端，一是因为可以做出精致的，直接展示给用户的交互界面，二是因为我很喜欢JavaScript这门语言。不是说js本身性能多么好，语法多么完美，而是js一开始被人们认为是玩具语言，不出多少年必死的言论层出不穷，然而js却越挫越勇，在很多大神手中玩出了花，甚至现在可以只靠js就能从前端到后台，从桌面程序到跨平台应用，都在一个人手中实现，太厉害了。而那句著名的，“一切能用JavaScript实现的程序，最终都会被用JavaScript实现”，也深深打动了我。</p><p>希望自己可以将这个网站坚持做下去，也许几年后的自己真的会感激我现在的努力，加油！</p>]]></content>
+    <content type="html"><![CDATA[<hr><p>title: 从今天起记录我的前端学习之路<br>date: 2019-07-26 13:22:13</p><h2 id="copyright-ture"><a href="#copyright-ture" class="headerlink" title="copyright: ture"></a>copyright: ture</h2><p>从今天起，我要开始记录我自己的前端学习之路了。</p><p>其实我不完全是前端的小白，断断续续知识也学了不少了，只是前端知识面覆盖太广，而我学习时间拖的太长，好多都已经遗忘了，所以一直都想找个机会从头把所有知识点都巩固一下。</p><p>前两天翻知乎，看到一个问题——有哪些适合前端程序员浏览的网站，有答案推荐了百度前端学院，我就想正好利用这个平台好好巩固一下我的基础知识。今天花了一上午搭建了这个个人网站，希望可以将我的学习之路好好地记录下来。</p><p>我喜欢前端，一是因为可以做出精致的，直接展示给用户的交互界面，二是因为我很喜欢JavaScript这门语言。不是说js本身性能多么好，语法多么完美，而是js一开始被人们认为是玩具语言，不出多少年必死的言论层出不穷，然而js却越挫越勇，在很多大神手中玩出了花，甚至现在可以只靠js就能从前端到后台，从桌面程序到跨平台应用，都在一个人手中实现，太厉害了。而那句著名的，“一切能用JavaScript实现的程序，最终都会被用JavaScript实现”，也深深打动了我。</p><p>希望自己可以将这个网站坚持做下去，也许几年后的自己真的会感激我现在的努力，加油！</p>]]></content>
     
     <summary type="html">
     
@@ -31,7 +31,7 @@
       
         &lt;hr&gt;
 &lt;p&gt;title: 从今天起记录我的前端学习之路&lt;br&gt;date: 2019-07-26 13:22:13&lt;/p&gt;
-&lt;h2 id=&quot;tags&quot;&gt;&lt;a href=&quot;#tags&quot; class=&quot;headerlink&quot; title=&quot;tags:&quot;&gt;&lt;/a&gt;tags:&lt;/h2&gt;
+&lt;h2 id=&quot;copyright-ture&quot;&gt;&lt;a href=&quot;#copyright-ture&quot; class=&quot;headerlink&quot; title=&quot;c
       
     
     </summary>
