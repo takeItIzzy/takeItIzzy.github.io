@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.takeItIzzy.com/"/>
-  <updated>2019-07-29T02:43:34.177Z</updated>
+  <updated>2019-07-26T08:19:34.790Z</updated>
   <id>http://www.takeItIzzy.com/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>html语义化</title>
-    <link href="http://www.takeItIzzy.com/2019/07/29/html%E8%AF%AD%E4%B9%89%E5%8C%96/"/>
-    <id>http://www.takeItIzzy.com/2019/07/29/html语义化/</id>
-    <published>2019-07-29T02:43:34.000Z</published>
-    <updated>2019-07-29T02:43:34.177Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>从今天起记录我的前端学习之路</title>
