@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="HTML,语义化,前端学习之路,">
+  <meta name="keywords" content="HTML,前端学习之路,语义化,">
 
 
 
@@ -89,7 +89,7 @@
 
 
 <meta name="description" content="其实 HTML 在刚开始设计出来的时候就是带有一定的“语义”的，包括段落、表格、图片、标题等等，但这些更多的只是方便浏览器等 UA 对它们做合适的处理。但逐渐地，机器也要借助 HTML 提供的语义以及自然语言处理的手段来“读懂”它们从网上获取的 HTML 文档，但它们无法读懂例如“红色的文字”或者是深度嵌套的表格布局中内容的含义，因为太多已有的内容都是专门为了可视化的浏览器设计的。面对这种情况，出">
-<meta name="keywords" content="HTML,语义化,前端学习之路">
+<meta name="keywords" content="HTML,前端学习之路,语义化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTML 语义化">
 <meta property="og:url" content="http://www.takeItIzzy.com/2019/07/29/html语义化/index.html">
@@ -98,7 +98,12 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/d4/45/d464f16955d1629b9911699e99d03f45.png">
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/67/15/67e0027f9a35eac8170b758f420ff815.jpeg">
-<meta property="og:updated_time" content="2019-07-29T06:24:29.920Z">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/b6/da/b692ade1e78d295de52ffe01edaa11da.png">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/cf/aa/cfc9a6542e0fc973e6e871043e7e42aa.jpeg">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/7d/48/7ddad196e7734fd32bfc577b3a459c48.jpeg">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/13/72/139b1603d3851b11e9ee4ed955aec972.png">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/3e/1e/3e3fca7df41dd824da47efca4aa2731e.jpeg">
+<meta property="og:updated_time" content="2019-07-30T09:28:17.469Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML 语义化">
 <meta name="twitter:description" content="其实 HTML 在刚开始设计出来的时候就是带有一定的“语义”的，包括段落、表格、图片、标题等等，但这些更多的只是方便浏览器等 UA 对它们做合适的处理。但逐渐地，机器也要借助 HTML 提供的语义以及自然语言处理的手段来“读懂”它们从网上获取的 HTML 文档，但它们无法读懂例如“红色的文字”或者是深度嵌套的表格布局中内容的含义，因为太多已有的内容都是专门为了可视化的浏览器设计的。面对这种情况，出">
@@ -407,6 +412,7 @@
 <p>Web 语义化，其实就是在往第二条路的方向上迈出的一小步，即对已有的被广泛认可的 HTML 标准做改进。</p>
 <h1 id="什么是语义类标签？"><a href="#什么是语义类标签？" class="headerlink" title="什么是语义类标签？"></a>什么是语义类标签？</h1><p>语义类标签看起来表现都差不多，主要的区别在于它们表示了不同的语义，比如 section、nav、code，都是语义类标签。</p>
 <p>语义是我们说话表达的意思。多数的语义实际上都是由文字来承载的。语义类标签则是纯文字的补充。比如标题、自然段、章节、列表，这些内容纯文字无法表达，所以需要语义标签代为表达。</p>
+<p><strong>语义标签并不一定会在视觉效果上有特殊之处，很多时候只是为了给被包裹的内容一个定义，加一种语义。</strong></p>
 <h1 id="语义化的好处"><a href="#语义化的好处" class="headerlink" title="语义化的好处"></a>语义化的好处</h1><p>语义化，简单来说就是让机器可以理解内容。<strong>正确地使用语义标签可以带来很多好处：</strong></p>
 <ul>
 <li><p>语义类标签增强了代码可读性，开发者可以更清晰地看出网页结构，便于团队开发和维护。</p>
@@ -507,7 +513,44 @@
 <p>aside 很容易被理解为侧边栏，实际上二者是包含关系，侧边栏是 aside，aside 不一定是侧边栏。</p>
 <p>aside 和 header（nav 标签），二者的区别是，header 中的导航多数是到文章自己的目录，而 aside 中的导航多数是到关联页面或者是整站地图。</p>
 <p>最后 footer 中包含 address，这是个非常容易被误用的标签。address 并非像 date 一样，表示一个给机器阅读的地址，而是表示”文章（作者）的联系方式“，address 明确地只关联到 article 和 body。</p>
-<h1 id="用语义类标签来构建页面"><a href="#用语义类标签来构建页面" class="headerlink" title="用语义类标签来构建页面"></a>用语义类标签来构建页面</h1><p>模拟 wiki 的页面，待办。</p>
+<h1 id="用语义类标签来构建页面"><a href="#用语义类标签来构建页面" class="headerlink" title="用语义类标签来构建页面"></a>用语义类标签来构建页面</h1><p>我们通过分析一篇 Wiki 的文章用到的语义类标签，来进一步学习语义类标签。</p>
+<ul>
+<li><a href="http://static001.geekbang.org/static/time/quote/World_Wide_Web-Wikipedia.html" target="_blank" rel="noopener">http://static001.geekbang.org/static/time/quote/World_Wide_Web-Wikipedia.html</a></li>
+</ul>
+<p>虽然在原本的 Wikipedia 网站中，也是大量使用了 div 和 span 来完成功能。在这里，我们来尝试分析一下，应该如何用语义类标签来呈现这样的一个页面。</p>
+<h2 id="aside"><a href="#aside" class="headerlink" title="aside"></a>aside</h2><blockquote>
+<p><strong>HTML &lt;aside&gt; 元素</strong>表示一个和其余页面内容几乎无关的部分，被认为是独立于该内容的一部分并且可以被单独的拆分出来而不会使整体受影响。其通常表现为侧边栏或者标注框（call-out boxes）。</p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/b6/da/b692ade1e78d295de52ffe01edaa11da.png" alt="aside"></p>
+<p>首先我们来看下，左侧侧边栏，根据之前提到的语义定义，这里属于 aside 内容，是导航性质的工具内容。</p>
+<h2 id="article"><a href="#article" class="headerlink" title="article"></a>article</h2><blockquote>
+<p><strong>HTML &lt;article&gt; 元素</strong>表示文档、页面、应用或网站中的独立结构，其意在成为可独立分配的或可复用的结构，如在发布中，它可能是论坛帖子、杂志或新闻文章、博客、用户提交的评论、交互式组件，或者其他独立的内容项目。​​</p>
+</blockquote>
+<blockquote>
+<p>引申阅读：<a href="https://www.qianduan.net/html5-differences-in-the-div-section-article/" target="_blank" rel="noopener">div, section, article 的区别</a></p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/cf/aa/cfc9a6542e0fc973e6e871043e7e42aa.jpeg" alt="article"></p>
+<p>我们来到文章主体部分，因为主体部分具有明确的独立性，所以可以用 article 来包裹。</p>
+<h2 id="hgroup-h1-h2"><a href="#hgroup-h1-h2" class="headerlink" title="hgroup, h1, h2"></a>hgroup, h1, h2</h2><blockquote>
+<p><strong>HTML &lt;hgroup&gt; 元素 (HTML Headings Group Element)</strong> 代表一个段的标题。它规定了在文档轮廓里（the outline of the document ）的单一标题是它所属的隐式或显式部分的标题。</p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/7d/48/7ddad196e7734fd32bfc577b3a459c48.jpeg" alt="hgroup"></p>
+<p>前文中介绍过 hgroup 和 h1 - h6 的作用，hgroup 是标题组，h1 是一级标题，h2 是二级标题。这里，World Wide Web 是文章的大标题，适合 h1 元素。</p>
+<p>接下来出现了一个副标题。From Wikipedia, the free encyclopedia。这个地方适合使用 h2，跟 h1 组成一个 hgroup，所以代码可能是类似这样的：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hgroup</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>World Wide Web <span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>From Wikipedia, the free encyclopedia<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hgroup</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="abbr"><a href="#abbr" class="headerlink" title="abbr"></a>abbr</h2><blockquote>
+<p><strong>HTML &lt;abbr&gt; 元素</strong>用于展示缩写，并且可以通过可选的 title 属性提供完整的描述。若使用 title 属性，则它必须且仅可包含完整的描述内容。</p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/13/72/139b1603d3851b11e9ee4ed955aec972.png" alt="abbr"></p>
+<p>abbr 标签表示缩写。考虑到 WWW 是 World Wide Web 的缩写，所以文中所有出现的 WWW，都应该使用 abbr 标签。</p>
+<p><code>&lt;abbr title=&quot;World Wide Web&quot;&gt;WWW&lt;/abbr&gt;</code></p>
+<h2 id="hr"><a href="#hr" class="headerlink" title="hr"></a>hr</h2><blockquote>
+<p><strong>HTML &lt;hr&gt; 元素</strong>表示段落级元素之间的主题转换（例如，一个故事中的场景的改变，或一个章节的主题的改变）。在 HTML 的早期版本中，它是一个水平线。现在它仍能在可视化浏览器中表现为水平线，但目前被定义为语义上的，而不是表现层面上。</p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/3e/1e/3e3fca7df41dd824da47efca4aa2731e.jpeg" alt="hr"></p>
+<p>在 Wiki 的界面中，出现了一条很长的横线，大家都知道 hr 标签表示横向分隔线，那么这个地方是不是应该用 hr 呢？</p>
+<p>答案是不用。hr 表示故事走向的转变或者话题的转变，显然此处两个标题并非这种关系，所以我们应该使用 CSS 的 border 来把它当作纯视觉效果来实现，在这里是不需要使用 hr 的。</p>
 
       
     </div>
@@ -537,7 +580,7 @@
   <p><span>本文标题:</span><a href="/2019/07/29/html语义化/">HTML 语义化</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhao.Yuxuan 的个人博客">Zhao.Yuxuan</a></p>
   <p><span>发布时间:</span>2019年07月29日 - 10:07</p>
-  <p><span>最后更新:</span>2019年07月29日 - 14:07</p>
+  <p><span>最后更新:</span>2019年07月30日 - 17:07</p>
   <p><span>原始链接:</span><a href="/2019/07/29/html语义化/" title="HTML 语义化">http://www.takeItIzzy.com/2019/07/29/html语义化/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.takeItIzzy.com/2019/07/29/html语义化/" aria-label="复制成功！"></i></span>
   </p>
@@ -572,9 +615,9 @@
           
             <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
           
-            <a href="/tags/语义化/" rel="tag"><i class="fa fa-tag"></i> 语义化</a>
-          
             <a href="/tags/前端学习之路/" rel="tag"><i class="fa fa-tag"></i> 前端学习之路</a>
+          
+            <a href="/tags/语义化/" rel="tag"><i class="fa fa-tag"></i> 语义化</a>
           
         </div>
       
@@ -596,6 +639,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/30/易错点总结/" rel="prev" title="易错点总结">
+                易错点总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -672,7 +719,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -694,7 +741,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -734,7 +781,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是语义类标签？"><span class="nav-number">1.</span> <span class="nav-text">什么是语义类标签？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义化的好处"><span class="nav-number">2.</span> <span class="nav-text">语义化的好处</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么时候应该用语义化标签呢？"><span class="nav-number">3.</span> <span class="nav-text">什么时候应该用语义化标签呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#作为自然语言延伸的语义类标签"><span class="nav-number">3.1.</span> <span class="nav-text">作为自然语言延伸的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为标题摘要的语义类标签"><span class="nav-number">3.2.</span> <span class="nav-text">作为标题摘要的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为整体结构的语义类标签"><span class="nav-number">3.3.</span> <span class="nav-text">作为整体结构的语义类标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用语义类标签来构建页面"><span class="nav-number">4.</span> <span class="nav-text">用语义类标签来构建页面</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是语义类标签？"><span class="nav-number">1.</span> <span class="nav-text">什么是语义类标签？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义化的好处"><span class="nav-number">2.</span> <span class="nav-text">语义化的好处</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么时候应该用语义化标签呢？"><span class="nav-number">3.</span> <span class="nav-text">什么时候应该用语义化标签呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#作为自然语言延伸的语义类标签"><span class="nav-number">3.1.</span> <span class="nav-text">作为自然语言延伸的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为标题摘要的语义类标签"><span class="nav-number">3.2.</span> <span class="nav-text">作为标题摘要的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为整体结构的语义类标签"><span class="nav-number">3.3.</span> <span class="nav-text">作为整体结构的语义类标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用语义类标签来构建页面"><span class="nav-number">4.</span> <span class="nav-text">用语义类标签来构建页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#aside"><span class="nav-number">4.1.</span> <span class="nav-text">aside</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#article"><span class="nav-number">4.2.</span> <span class="nav-text">article</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hgroup-h1-h2"><span class="nav-number">4.3.</span> <span class="nav-text">hgroup, h1, h2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#abbr"><span class="nav-number">4.4.</span> <span class="nav-text">abbr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hr"><span class="nav-number">4.5.</span> <span class="nav-text">hr</span></a></li></ol></li></ol></div>
             
 
           </div>
