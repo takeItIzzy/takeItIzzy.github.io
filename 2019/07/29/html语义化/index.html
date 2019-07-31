@@ -103,7 +103,12 @@
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/7d/48/7ddad196e7734fd32bfc577b3a459c48.jpeg">
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/13/72/139b1603d3851b11e9ee4ed955aec972.png">
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/3e/1e/3e3fca7df41dd824da47efca4aa2731e.jpeg">
-<meta property="og:updated_time" content="2019-07-30T09:28:17.469Z">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/a5/d4/a5c22955f87e2861cadfa3fdb15565d4.jpeg">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/d7/a1/d7f8b1f98df1488813c3fc2d6b06d5a1.jpeg">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/e5/1a/e516e5e00ecc5b6b0b743dd2a8d65d1a.png">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/31/45/31246e3ebf6426bfd6b1373a0644b245.png">
+<meta property="og:image" content="https://static001.geekbang.org/resource/image/95/b6/9573647112ae3812013b37c29aa7d2b6.png">
+<meta property="og:updated_time" content="2019-07-31T12:37:27.365Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML 语义化">
 <meta name="twitter:description" content="其实 HTML 在刚开始设计出来的时候就是带有一定的“语义”的，包括段落、表格、图片、标题等等，但这些更多的只是方便浏览器等 UA 对它们做合适的处理。但逐渐地，机器也要借助 HTML 提供的语义以及自然语言处理的手段来“读懂”它们从网上获取的 HTML 文档，但它们无法读懂例如“红色的文字”或者是深度嵌套的表格布局中内容的含义，因为太多已有的内容都是专门为了可视化的浏览器设计的。面对这种情况，出">
@@ -442,6 +447,9 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">今天我吃了一个<span class="tag">&lt;<span class="name">em</span>&gt;</span>苹果<span class="tag">&lt;/<span class="name">em</span>&gt;</span>。</span><br><span class="line">今天我吃了<span class="tag">&lt;<span class="name">em</span>&gt;</span>一个<span class="tag">&lt;/<span class="name">em</span>&gt;</span>苹果。</span><br></pre></td></tr></table></figure>
 
 <p>通过 em 标签，可以消除这样的歧义。</p>
+<blockquote>
+<p>拓展：<br>&emsp;&emsp;HTML 着重元素（&lt;em&gt;）标记出需要用户着重阅读的内容，通常该元素会被浏览器展示为斜体文本，&lt;em&gt; 元素是可以嵌套的，嵌套层次越深，则其包含的内容被认为越需要着重阅读。<br>&emsp;&emsp;然而，当你只想让文本展示斜体样式的时候，不应该使用 em 标签，而是用 CSS 样式来实现。使用 &lt;cite&gt; 标签来标记书本、歌曲、剧本等的标题；那也会将文本展示成斜体，但是它们有着不同的寓意。使用 &lt;strong&gt; 标签来标记比周围文本更重要的文本。</p>
+</blockquote>
 <h2 id="作为标题摘要的语义类标签"><a href="#作为标题摘要的语义类标签" class="headerlink" title="作为标题摘要的语义类标签"></a>作为标题摘要的语义类标签</h2><p>中国古代小说就形成了“章-回”的概念，西方的戏剧也有幕的区分，人类的自然语言作品也是如出一辙。</p>
 <p>HTML 也应该支持这样的需求。HTML 语义标签中，有不少是用于支持这样结构的标签。</p>
 <p>语义化的 HTML 能够支持自动生成目录结构，HTML 标准中还专门规定了生成目录结构的算法，即使我们并不打算深入实践语义，也应该尽量在大的层面上保证这些元素的语义化使用。</p>
@@ -551,6 +559,34 @@
 <p><img src="https://static001.geekbang.org/resource/image/3e/1e/3e3fca7df41dd824da47efca4aa2731e.jpeg" alt="hr"></p>
 <p>在 Wiki 的界面中，出现了一条很长的横线，大家都知道 hr 标签表示横向分隔线，那么这个地方是不是应该用 hr 呢？</p>
 <p>答案是不用。hr 表示故事走向的转变或者话题的转变，显然此处两个标题并非这种关系，所以我们应该使用 CSS 的 border 来把它当作纯视觉效果来实现，在这里是不需要使用 hr 的。</p>
+<h2 id="p"><a href="#p" class="headerlink" title="p"></a>p</h2><blockquote>
+<p>HTML &lt;p&gt; 元素（或者说 HTML 段落元素）表示文本的一个段落。该元素通常表现为一整块与相邻文本分离的文本，或以垂直的空白隔离或以首行缩进。另外，&lt;p&gt; 是块级元素。</p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/a5/d4/a5c22955f87e2861cadfa3fdb15565d4.jpeg" alt="p"></p>
+<p>接下来一段，有三段“note”，也就是注记。它在文章中用作额外注释。HTML 中并没有 note 相关的语义，所以我们用普通的 p 标签，加上 class=”note” 来实现。后面的多数自然段都是普通的段落，我们用 p 标签来实现。</p>
+<h2 id="strong"><a href="#strong" class="headerlink" title="strong"></a>strong</h2><blockquote>
+<p>Strong 元素 (&lt;strong&gt;)表示文本十分重要，一般用粗体显示。</p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/d7/a1/d7f8b1f98df1488813c3fc2d6b06d5a1.jpeg" alt="strong"></p>
+<p>这里“World Wide Web(www)”和“the Web”使用了黑体呈现，从上下文来看，这里表示这个词很重要，所以我们使用 strong 标签。</p>
+<h2 id="blockquote-q-cite"><a href="#blockquote-q-cite" class="headerlink" title="blockquote, q, cite"></a>blockquote, q, cite</h2><blockquote>
+<p>&emsp;&emsp;HTML &lt;blockquote&gt; 元素（或者 HTML 块级引用元素），代表其中的文字是引用内容。通常在渲染时，这部分的内容会有一定的缩进（可通过 margin 修改）。若引文来源于网络，则可以将原内容的出处 URL 地址设置到 blockquote 元素的 cite 属性上，若要以文本的形式告知读者引文的出处时，可以使用 &lt;cite&gt; 元素。<br>&emsp;&emsp;HTML 引用标签 (&lt;q&gt;)表示一个封闭的并且是短的行内引用的文本。这个标签是用来引用短的文本，所以请不要引入换行符; 对于长的文本的引用请使用 &lt;blockquote&gt; 替代。<br>&emsp;&emsp;HTML 引用（Citation）标签 (&lt;cite&gt;) 表示一个作品的引用。它必须包含引用作品的符合简写格式的标题或者 URL ，它可能是一个根据添加引用元数据的约定的简写形式。<strong>可以把 cite 标签简单理解为书名号。</strong></p>
+</blockquote>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;blockquote cite=<span class="string">"https://www.huxley.net/bnw/four.html"</span>&gt;</span><br><span class="line">    <span class="symbol">&lt;p&gt;</span></span><br><span class="line">        Words can <span class="keyword">be</span> like <span class="keyword">X</span>-rays, <span class="keyword">if</span> you use them properly—they’<span class="keyword">ll</span> <span class="keyword">go</span> through anything. You <span class="keyword">read</span> <span class="built_in">and</span> you’re pierced.</span><br><span class="line">    &lt;/<span class="keyword">p</span>&gt;</span><br><span class="line">    <span class="symbol">&lt;footer&gt;</span></span><br><span class="line">        —Aldous Huxley, <span class="symbol">&lt;cite&gt;</span>Brave New World&lt;/cite&gt;</span><br><span class="line">    &lt;/footer&gt;</span><br><span class="line">&lt;/blockquote&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://static001.geekbang.org/resource/image/e5/1a/e516e5e00ecc5b6b0b743dd2a8d65d1a.png" alt="引用"></p>
+<p>接下来我们看到了一个论文中很常见的用法——“引述”。</p>
+<p>注意看这里的[1]，当我们把鼠标放上去的时候，出现了引述的相关信息。</p>
+<p>在 HTML 中，有三个跟引述相关的标签：blockquote 表示段落级引述内容，q 表示行内的引述内容，cite 表示引述的作品名。</p>
+<p>这里的作品名称“What is the difference between the Web and the Internet?”，应当使用 cite 标签。</p>
+<p>在文章的结尾处，有对应的 Reference 一节，这一节中所有的作品名称也应该加入 cite 标签。</p>
+<p><img src="https://static001.geekbang.org/resource/image/31/45/31246e3ebf6426bfd6b1373a0644b245.png" alt="cite"></p>
+<p>这里我们看看引用的原文就可以知道，Wiki 文章中的信息并非直接引用，如果是直接引用的内容，那么，我们还应该加上 blockquote 或者 q 标签。</p>
+<h2 id="time"><a href="#time" class="headerlink" title="time"></a>time</h2><blockquote>
+<p>&emsp;&emsp;HTML time 标签(&lt;time&gt;) 用来表示 24 小时制时间或者公历日期，若表示日期则也可包含时间和时区。<br>&emsp;&emsp;<strong>此元素意在以机器可读的格式表示日期和时间。</strong> 有安排日程表功能的应用可以利用这一点。<br>&emsp;&emsp;<strong>用法提示：</strong>如果给定的日期不是正常日期或者在公历中最早的日期之前，请不要使用此元素。</p>
+</blockquote>
+<p><img src="https://static001.geekbang.org/resource/image/95/b6/9573647112ae3812013b37c29aa7d2b6.png" alt="time"></p>
+<p>这里除了引用的文章之外，还出现了日期，为了让机器阅读更加方便，可以加上 time 标签。</p>
 
       
     </div>
@@ -580,7 +616,7 @@
   <p><span>本文标题:</span><a href="/2019/07/29/html语义化/">HTML 语义化</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhao.Yuxuan 的个人博客">Zhao.Yuxuan</a></p>
   <p><span>发布时间:</span>2019年07月29日 - 10:07</p>
-  <p><span>最后更新:</span>2019年07月30日 - 17:07</p>
+  <p><span>最后更新:</span>2019年07月31日 - 20:07</p>
   <p><span>原始链接:</span><a href="/2019/07/29/html语义化/" title="HTML 语义化">http://www.takeItIzzy.com/2019/07/29/html语义化/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.takeItIzzy.com/2019/07/29/html语义化/" aria-label="复制成功！"></i></span>
   </p>
@@ -781,7 +817,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是语义类标签？"><span class="nav-number">1.</span> <span class="nav-text">什么是语义类标签？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义化的好处"><span class="nav-number">2.</span> <span class="nav-text">语义化的好处</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么时候应该用语义化标签呢？"><span class="nav-number">3.</span> <span class="nav-text">什么时候应该用语义化标签呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#作为自然语言延伸的语义类标签"><span class="nav-number">3.1.</span> <span class="nav-text">作为自然语言延伸的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为标题摘要的语义类标签"><span class="nav-number">3.2.</span> <span class="nav-text">作为标题摘要的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为整体结构的语义类标签"><span class="nav-number">3.3.</span> <span class="nav-text">作为整体结构的语义类标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用语义类标签来构建页面"><span class="nav-number">4.</span> <span class="nav-text">用语义类标签来构建页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#aside"><span class="nav-number">4.1.</span> <span class="nav-text">aside</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#article"><span class="nav-number">4.2.</span> <span class="nav-text">article</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hgroup-h1-h2"><span class="nav-number">4.3.</span> <span class="nav-text">hgroup, h1, h2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#abbr"><span class="nav-number">4.4.</span> <span class="nav-text">abbr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hr"><span class="nav-number">4.5.</span> <span class="nav-text">hr</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是语义类标签？"><span class="nav-number">1.</span> <span class="nav-text">什么是语义类标签？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#语义化的好处"><span class="nav-number">2.</span> <span class="nav-text">语义化的好处</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么时候应该用语义化标签呢？"><span class="nav-number">3.</span> <span class="nav-text">什么时候应该用语义化标签呢？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#作为自然语言延伸的语义类标签"><span class="nav-number">3.1.</span> <span class="nav-text">作为自然语言延伸的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为标题摘要的语义类标签"><span class="nav-number">3.2.</span> <span class="nav-text">作为标题摘要的语义类标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#作为整体结构的语义类标签"><span class="nav-number">3.3.</span> <span class="nav-text">作为整体结构的语义类标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用语义类标签来构建页面"><span class="nav-number">4.</span> <span class="nav-text">用语义类标签来构建页面</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#aside"><span class="nav-number">4.1.</span> <span class="nav-text">aside</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#article"><span class="nav-number">4.2.</span> <span class="nav-text">article</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hgroup-h1-h2"><span class="nav-number">4.3.</span> <span class="nav-text">hgroup, h1, h2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#abbr"><span class="nav-number">4.4.</span> <span class="nav-text">abbr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hr"><span class="nav-number">4.5.</span> <span class="nav-text">hr</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#p"><span class="nav-number">4.6.</span> <span class="nav-text">p</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#strong"><span class="nav-number">4.7.</span> <span class="nav-text">strong</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#blockquote-q-cite"><span class="nav-number">4.8.</span> <span class="nav-text">blockquote, q, cite</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#time"><span class="nav-number">4.9.</span> <span class="nav-text">time</span></a></li></ol></li></ol></div>
             
 
           </div>
