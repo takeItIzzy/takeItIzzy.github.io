@@ -111,7 +111,7 @@
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/6d/72/6d473b6fb734ea85a8cc209bc1716b72.png">
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/b7/19/b7ae53127450b496729edd459cbc0619.png">
 <meta property="og:image" content="https://static001.geekbang.org/resource/image/c1/f6/c12c129af98f6aa99b7dcdbdef1f62f6.png">
-<meta property="og:updated_time" content="2019-08-07T14:28:30.349Z">
+<meta property="og:updated_time" content="2019-08-07T14:40:10.295Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML 语义化">
 <meta name="twitter:description" content="其实 HTML 在刚开始设计出来的时候就是带有一定的“语义”的，包括段落、表格、图片、标题等等，但这些更多的只是方便浏览器等 UA 对它们做合适的处理。但逐渐地，机器也要借助 HTML 提供的语义以及自然语言处理的手段来“读懂”它们从网上获取的 HTML 文档，但它们无法读懂例如“红色的文字”或者是深度嵌套的表格布局中内容的含义，因为太多已有的内容都是专门为了可视化的浏览器设计的。面对这种情况，出">
@@ -632,7 +632,13 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h2</span>&gt;</span>Contents<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"..."</span>&gt;</span>History<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"..."</span>&gt;</span>Function<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">ol</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"..."</span>&gt;</span>Linking<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"..."</span>&gt;</span>Dynamic updates of web pages<span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        ...</span><br><span class="line">      <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    ...</span><br><span class="line">  <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <p>注意，ol 和 ul 的区分是内容是否有顺序关系，每一项前面不论是数字还是点，都不影响语义的判断。不要因为视觉表现效果，而改变语义的使用。</p>
-<h2 id="pre-samp-code"><a href="#pre-samp-code" class="headerlink" title="pre, samp, code"></a>pre, samp, code</h2>
+<h2 id="pre-samp-code"><a href="#pre-samp-code" class="headerlink" title="pre, samp, code"></a>pre, samp, code</h2><blockquote>
+<p>&emsp;&emsp;HTML &lt;pre&gt; 元素表示预定义格式文本。在该元素中的文本通常按照原文件中的编排，以等宽字体的形式展现出来，文本中的空白符（比如空格和换行符）都会显示出来。(紧跟在 &lt;pre&gt; 开始标签后的换行符也会被省略)</p>
+<blockquote>
+<p><strong>注意：</strong> 你需要将该元素里的 <code>&lt;</code> 字符转义为 <code>&amp;lt;</code> 以保证代码里的关闭代码不被浏览器解释为标签。</p>
+</blockquote>
+</blockquote>
+
       
     </div>
     
