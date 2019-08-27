@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出🍟🍔🥤，但其实输出了🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the la">
+<meta name="description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出 🍟🍔🥤，但其实输出了 🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the">
 <meta name="keywords" content="PHP,易错点">
 <meta property="og:type" content="article">
 <meta property="og:title" content="strrchr">
 <meta property="og:url" content="http://www.takeItIzzy.com/2019/08/27/strrchr/index.html">
 <meta property="og:site_name" content="Zhao.Yuxuan">
-<meta property="og:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出🍟🍔🥤，但其实输出了🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the la">
+<meta property="og:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出 🍟🍔🥤，但其实输出了 🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-27T04:56:30.701Z">
+<meta property="og:updated_time" content="2019-08-27T07:54:34.904Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="strrchr">
-<meta name="twitter:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出🍟🍔🥤，但其实输出了🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the la">
+<meta name="twitter:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出 🍟🍔🥤，但其实输出了 🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the">
 
 
 
@@ -397,16 +397,24 @@
         <p>今天在学 PHP 字符串操作的时候写了这么一行代码</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"🍔🍟🍟🍔🥤"</span>, <span class="string">"🍟"</span>);</span><br></pre></td></tr></table></figure>
 
-<p>我希望的是能输出<code>🍟🍔🥤</code>，但其实输出了<code>🥤</code>。</p>
+<p>我希望的是能输出 <code>🍟🍔🥤</code>，但其实输出了 <code>🥤</code>。</p>
 <p>这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定<strong>子字符串</strong>在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。</p>
 <blockquote>
 <p>Find the last occurrence of a character in a string.<br>If needle contains more than one character, only the first is used.</p>
 </blockquote>
-<p>这是对于 strrchr() 函数的描述，重点在第二句，也就是说，strrchr() 函数的第二个参数是个<strong>字符</strong>而不是<strong>字符串</strong>。如果 strrchr() 函数的第二个参数传的是个字符串的话，将按照这个字符串的第一个字符查找。</p>
+<p>这是对于 strrchr() 函数的描述，重点在第二句。也就是说，strrchr() 函数的第二个参数是个<strong>字符</strong>而不是<strong>字符串</strong>。如果 strrchr() 函数的第二个参数传的是个字符串的话，将按照这个字符串的第一个字符查找。</p>
 <p>举个例子：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"I like this movie, how about you?"</span>, <span class="string">"this"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"I like this movie, how about you?"</span>, <span class="string">"this"</span>);</span><br></pre></td></tr></table></figure>
 
-<p>这行代码的本意是想输出<code>this movie, how about you?</code>，但其实会输出<code>t you?</code>，因为系统会只根据<code>this</code>字符串的第一个字符<code>t</code>进行查找，找到这句话中最后一个<code>t</code>，并返回之后的字符串。</p>
+<p>这行代码的本意是想输出 <code>this movie, how about you?</code>，但其实会输出 <code>t you?</code>，因为系统会只根据 <code>this</code> 字符串的第一个字符 <code>t</code> 进行查找，找到这句话中最后一个 <code>t</code>，并返回之后的字符串。</p>
+<p>了解了 strrchr() 函数后，我们再来回到最开始的问题，为什么我在 <code>🍔🍟🍟🍔🥤</code> 中搜索 <code>🍟</code>，返回的是 <code>🥤</code> 呢？这就要说到 PHP 对于字符串的处理方式了。</p>
+<ul>
+<li>PHP 的字符串，是由字节组成的数组构成的，类似于 C 语言 <code>char a[3] = &quot;abc&quot;</code> 这样，一个字符占一个字节。</li>
+<li>除此之外，PHP 并没有存储文本的编码信息，也就是说，PHP 并不知道这些字符串的二进制数据，应该对应怎样的编码。</li>
+<li>PHP 并不保存字符串的编码信息。所以即便 <code>🍟</code> 保存为 <code>f09f8d9f</code>，在字符串原生函数看来，都只是一串二进制数，所以，PHP 原生字符串函数智能操作单字节字符，也就是把一个字节当作一个字符来处理。</li>
+</ul>
+<p>知道了这些，就能看懂上面的例子了。我们可以通过 bin2hex() 函数将字符串转为 16 进制数，<code>🍔🍟🍟🍔🥤</code> 被转为了 <code>f09f8d94f09f8d9ff09f8d9ff09f8d94f09fa5a4</code>。我们将 <code>🍟</code> 也用 bin2hex() 转换，得到结果为 <code>f09f8d9f</code>。将这个结果转为二进制数，即 <code>11110000100111111000110110011111</code>。我们现在知道，即使将 strrchr() 函数的第二个参数填为 <code>🍟</code>，其实 PHP 也并不会搜索 <code>🍟</code>，而会搜索 <code>🍟</code> 中第一个字节的字符，即 <code>11110000</code> 所代表的 <code>f0</code>，然后返回 f0 之后直到结束的所有字符，也就是 <code>f09fa5a4</code>，也就是 <code>🥤</code>。</p>
+<p>这就是为什么在 <code>🍔🍟🍟🍔🥤</code> 中搜索 <code>🍟</code>，返回的却是 <code>🥤</code> 的原因了。</p>
 
       
     </div>
@@ -436,7 +444,7 @@
   <p><span>本文标题:</span><a href="/2019/08/27/strrchr/">strrchr</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhao.Yuxuan 的个人博客">Zhao.Yuxuan</a></p>
   <p><span>发布时间:</span>2019年08月27日 - 12:08</p>
-  <p><span>最后更新:</span>2019年08月27日 - 12:08</p>
+  <p><span>最后更新:</span>2019年08月27日 - 15:08</p>
   <p><span>原始链接:</span><a href="/2019/08/27/strrchr/" title="strrchr">http://www.takeItIzzy.com/2019/08/27/strrchr/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.takeItIzzy.com/2019/08/27/strrchr/" aria-label="复制成功！"></i></span>
   </p>
