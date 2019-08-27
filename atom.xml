@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.takeItIzzy.com/"/>
-  <updated>2019-08-27T04:41:49.818Z</updated>
+  <updated>2019-08-27T04:56:30.701Z</updated>
   <id>http://www.takeItIzzy.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://www.takeItIzzy.com/2019/08/27/strrchr/"/>
     <id>http://www.takeItIzzy.com/2019/08/27/strrchr/</id>
     <published>2019-08-27T04:36:45.000Z</published>
-    <updated>2019-08-27T04:41:49.818Z</updated>
+    <updated>2019-08-27T04:56:30.701Z</updated>
     
-    <content type="html"><![CDATA[<p>今天在学 PHP 字符串操作的时候写了这么一行代码</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"🍔🍟🍟🍔🥤"</span>, <span class="string">"🍟"</span>);</span><br></pre></td></tr></table></figure><p>我希望的是能输出<code>🍟🍔🥤</code>，但其实输出了<code>🥤</code>。</p>]]></content>
+    <content type="html"><![CDATA[<p>今天在学 PHP 字符串操作的时候写了这么一行代码</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"🍔🍟🍟🍔🥤"</span>, <span class="string">"🍟"</span>);</span><br></pre></td></tr></table></figure><p>我希望的是能输出<code>🍟🍔🥤</code>，但其实输出了<code>🥤</code>。</p><p>这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定<strong>子字符串</strong>在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。</p><blockquote><p>Find the last occurrence of a character in a string.<br>If needle contains more than one character, only the first is used.</p></blockquote><p>这是对于 strrchr() 函数的描述，重点在第二句，也就是说，strrchr() 函数的第二个参数是个<strong>字符</strong>而不是<strong>字符串</strong>。如果 strrchr() 函数的第二个参数传的是个字符串的话，将按照这个字符串的第一个字符查找。</p><p>举个例子：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"I like this movie, how about you?"</span>, <span class="string">"this"</span>)</span><br></pre></td></tr></table></figure><p>这行代码的本意是想输出<code>this movie, how about you?</code>，但其实会输出<code>t you?</code>，因为系统会只根据<code>this</code>字符串的第一个字符<code>t</code>进行查找，找到这句话中最后一个<code>t</code>，并返回之后的字符串。</p>]]></content>
     
     <summary type="html">
     
