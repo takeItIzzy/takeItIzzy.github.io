@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="易错点,HTML,前端学习之路,">
+  <meta name="keywords" content="PHP,易错点,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="section 标签使用的几点禁忌： section 不仅仅是一个普通的容器标签。当一个标签只是为了样式化或者方便脚本使用时，应该使用 div 。一般来说，当元素内容明确地出现在文档大纲中时，section 就是适用的。 如果其他的元素，比如 article、aside、nav 等更合适，就不要用 section。 不要为没有标题的内容区块使用 section。">
-<meta name="keywords" content="易错点,HTML,前端学习之路">
+<meta name="description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出🍟🍔🥤，但其实输出了🥤。">
+<meta name="keywords" content="PHP,易错点">
 <meta property="og:type" content="article">
-<meta property="og:title" content="易错点总结">
-<meta property="og:url" content="http://www.takeItIzzy.com/2019/07/30/易错点总结/index.html">
+<meta property="og:title" content="strrchr">
+<meta property="og:url" content="http://www.takeItIzzy.com/2019/08/27/strrchr/index.html">
 <meta property="og:site_name" content="Zhao.Yuxuan">
-<meta property="og:description" content="section 标签使用的几点禁忌： section 不仅仅是一个普通的容器标签。当一个标签只是为了样式化或者方便脚本使用时，应该使用 div 。一般来说，当元素内容明确地出现在文档大纲中时，section 就是适用的。 如果其他的元素，比如 article、aside、nav 等更合适，就不要用 section。 不要为没有标题的内容区块使用 section。">
+<meta property="og:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出🍟🍔🥤，但其实输出了🥤。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-30T09:09:30.935Z">
+<meta property="og:updated_time" content="2019-08-27T04:41:49.818Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="易错点总结">
-<meta name="twitter:description" content="section 标签使用的几点禁忌： section 不仅仅是一个普通的容器标签。当一个标签只是为了样式化或者方便脚本使用时，应该使用 div 。一般来说，当元素内容明确地出现在文档大纲中时，section 就是适用的。 如果其他的元素，比如 article、aside、nav 等更合适，就不要用 section。 不要为没有标题的内容区块使用 section。">
+<meta name="twitter:title" content="strrchr">
+<meta name="twitter:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出🍟🍔🥤，但其实输出了🥤。">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://www.takeItIzzy.com/2019/07/30/易错点总结/">
+  <link rel="canonical" href="http://www.takeItIzzy.com/2019/08/27/strrchr/">
 
 
 
 
 
-  <title>易错点总结 | Zhao.Yuxuan</title>
+  <title>strrchr | Zhao.Yuxuan</title>
   
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.takeItIzzy.com/2019/07/30/易错点总结/">
+    <link itemprop="mainEntityOfPage" href="http://www.takeItIzzy.com/2019/08/27/strrchr/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhao.Yuxuan">
@@ -322,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">易错点总结</h1>
+          <h1 class="post-title" itemprop="name headline">strrchr</h1>
         
 
         <div class="post-meta">
@@ -334,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T10:47:38+08:00">
-                2019-07-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-27T12:36:45+08:00">
+                2019-08-27
               </time>
             
 
@@ -357,8 +357,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/HTML/" itemprop="url" rel="index">
-                    <span itemprop="name">HTML</span>
+                  <a href="/categories/PHP/" itemprop="url" rel="index">
+                    <span itemprop="name">PHP</span>
                   </a>
                 </span>
 
@@ -394,11 +394,10 @@
       
 
       
-        <h2 id="section-标签使用的几点禁忌："><a href="#section-标签使用的几点禁忌：" class="headerlink" title="section 标签使用的几点禁忌："></a>section 标签使用的几点禁忌：</h2><ol>
-<li>section 不仅仅是一个普通的容器标签。当一个标签只是为了样式化或者方便脚本使用时，应该使用 div 。一般来说，当元素内容明确地出现在文档大纲中时，section 就是适用的。</li>
-<li>如果其他的元素，比如 article、aside、nav 等更合适，就不要用 section。</li>
-<li>不要为没有标题的内容区块使用 section。</li>
-</ol>
+        <p>今天在学 PHP 字符串操作的时候写了这么一行代码</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"🍔🍟🍟🍔🥤"</span>, <span class="string">"🍟"</span>);</span><br></pre></td></tr></table></figure>
+
+<p>我希望的是能输出<code>🍟🍔🥤</code>，但其实输出了<code>🥤</code>。</p>
 
       
     </div>
@@ -425,12 +424,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/07/30/易错点总结/">易错点总结</a></p>
+  <p><span>本文标题:</span><a href="/2019/08/27/strrchr/">strrchr</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhao.Yuxuan 的个人博客">Zhao.Yuxuan</a></p>
-  <p><span>发布时间:</span>2019年07月30日 - 10:07</p>
-  <p><span>最后更新:</span>2019年07月30日 - 17:07</p>
-  <p><span>原始链接:</span><a href="/2019/07/30/易错点总结/" title="易错点总结">http://www.takeItIzzy.com/2019/07/30/易错点总结/</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.takeItIzzy.com/2019/07/30/易错点总结/" aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年08月27日 - 12:08</p>
+  <p><span>最后更新:</span>2019年08月27日 - 12:08</p>
+  <p><span>原始链接:</span><a href="/2019/08/27/strrchr/" title="strrchr">http://www.takeItIzzy.com/2019/08/27/strrchr/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.takeItIzzy.com/2019/08/27/strrchr/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -461,11 +460,9 @@
       
         <div class="post-tags">
           
+            <a href="/tags/PHP/" rel="tag"><i class="fa fa-tag"></i> PHP</a>
+          
             <a href="/tags/易错点/" rel="tag"><i class="fa fa-tag"></i> 易错点</a>
-          
-            <a href="/tags/HTML/" rel="tag"><i class="fa fa-tag"></i> HTML</a>
-          
-            <a href="/tags/前端学习之路/" rel="tag"><i class="fa fa-tag"></i> 前端学习之路</a>
           
         </div>
       
@@ -478,8 +475,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/29/html语义化/" rel="next" title="HTML 语义化">
-                <i class="fa fa-chevron-left"></i> HTML 语义化
+              <a href="/2019/07/30/易错点总结/" rel="next" title="易错点总结">
+                <i class="fa fa-chevron-left"></i> 易错点总结
               </a>
             
           </div>
@@ -487,10 +484,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/27/strrchr/" rel="prev" title="strrchr">
-                strrchr <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -542,17 +535,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -619,22 +603,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#section-标签使用的几点禁忌："><span class="nav-number">1.</span> <span class="nav-text">section 标签使用的几点禁忌：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
