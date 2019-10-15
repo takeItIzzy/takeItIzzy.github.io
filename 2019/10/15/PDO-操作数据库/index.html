@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="PHP,">
 
 
 
@@ -88,14 +88,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://www.takeItIzzy.com/categories/index.html">
+<meta name="description" content="什么是 PDO？PDO 是一个数据抽象层，它抽象了诸如 MySQL、SQLite、PostgreSQL、SQL Server、Oracle 等主流的关系数据库，将这些数据库公有的特性，如连接、查询、预处理、数据取回等，封装成了统一的 API，对于 PHP 应用来说，可以不用关心使用的是哪种数据库。 PDO 操作方法1. 连接连接数据库首先需要知道数据库的用户名和密码，还需要知道一个 dsn，描述了">
+<meta name="keywords" content="PHP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PDO 操作数据库">
+<meta property="og:url" content="http://www.takeItIzzy.com/2019/10/15/PDO-操作数据库/index.html">
 <meta property="og:site_name" content="Zhao.Yuxuan">
+<meta property="og:description" content="什么是 PDO？PDO 是一个数据抽象层，它抽象了诸如 MySQL、SQLite、PostgreSQL、SQL Server、Oracle 等主流的关系数据库，将这些数据库公有的特性，如连接、查询、预处理、数据取回等，封装成了统一的 API，对于 PHP 应用来说，可以不用关心使用的是哪种数据库。 PDO 操作方法1. 连接连接数据库首先需要知道数据库的用户名和密码，还需要知道一个 dsn，描述了">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-29T06:42:34.888Z">
+<meta property="og:updated_time" content="2019-10-15T05:38:02.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
+<meta name="twitter:title" content="PDO 操作数据库">
+<meta name="twitter:description" content="什么是 PDO？PDO 是一个数据抽象层，它抽象了诸如 MySQL、SQLite、PostgreSQL、SQL Server、Oracle 等主流的关系数据库，将这些数据库公有的特性，如连接、查询、预处理、数据取回等，封装成了统一的 API，对于 PHP 应用来说，可以不用关心使用的是哪种数据库。 PDO 操作方法1. 连接连接数据库首先需要知道数据库的用户名和密码，还需要知道一个 dsn，描述了">
 
 
 
@@ -125,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://www.takeItIzzy.com/categories/">
+  <link rel="canonical" href="http://www.takeItIzzy.com/2019/10/15/PDO-操作数据库/">
 
 
 
 
 
-  <title>分类 | Zhao.Yuxuan</title>
+  <title>PDO 操作数据库 | Zhao.Yuxuan</title>
   
 
 
@@ -289,40 +293,216 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.takeItIzzy.com/2019/10/15/PDO-操作数据库/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhao.Yuxuan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhao.Yuxuan">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 3 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂感/">杂感</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">PDO 操作数据库</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-15T12:44:29+08:00">
+                2019-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/PHP/" itemprop="url" rel="index">
+                    <span itemprop="name">PHP</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="什么是-PDO？"><a href="#什么是-PDO？" class="headerlink" title="什么是 PDO？"></a>什么是 PDO？</h1><p>PDO 是一个数据抽象层，它抽象了诸如 MySQL、SQLite、PostgreSQL、SQL Server、Oracle 等主流的关系数据库，将这些数据库公有的特性，如连接、查询、预处理、数据取回等，封装成了统一的 API，对于 PHP 应用来说，可以不用关心使用的是哪种数据库。</p>
+<h1 id="PDO-操作方法"><a href="#PDO-操作方法" class="headerlink" title="PDO 操作方法"></a>PDO 操作方法</h1><h2 id="1-连接"><a href="#1-连接" class="headerlink" title="1. 连接"></a>1. 连接</h2><p>连接数据库首先需要知道数据库的用户名和密码，还需要知道一个 dsn，描述了要用什么数据库，数据库的参数是什么。</p>
+<p>然后 new 一个 PDO 对象，将 dsn 以及用户名和密码传过去，如果数据库连接成功，会返回一个 handle，我命名为 <code>$dbh</code>，通过 <code>$dbh</code>，就可以对数据库进行操作了。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$username = <span class="string">'php'</span>;</span><br><span class="line">$password = <span class="string">'123'</span>;</span><br><span class="line">$dsn = <span class="string">'mysql:host=localhost:8087/mysql.php;dbname=myDB'</span>;</span><br><span class="line">$dbh = <span class="keyword">new</span> PDO($dsn, $username, $password);</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-操作"><a href="#2-操作" class="headerlink" title="2. 操作"></a>2. 操作</h2><h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><p>通过 <code>$dbh-&gt;query()</code> 方法，可以传一条 sql 语句到数据库，查询的结果会以数组的形式返回回来</p>
+
       
     </div>
     
     
     
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/10/15/PDO-操作数据库/">PDO 操作数据库</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Zhao.Yuxuan 的个人博客">Zhao.Yuxuan</a></p>
+  <p><span>发布时间:</span>2019年10月15日 - 12:10</p>
+  <p><span>最后更新:</span>2019年10月15日 - 13:10</p>
+  <p><span>原始链接:</span><a href="/2019/10/15/PDO-操作数据库/" title="PDO 操作数据库">http://www.takeItIzzy.com/2019/10/15/PDO-操作数据库/</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.takeItIzzy.com/2019/10/15/PDO-操作数据库/" aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+    });
+    });  
+</script>
+
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/PHP/" rel="tag"><i class="fa fa-tag"></i> PHP</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/27/strrchr/" rel="next" title="PHP 对字符串的处理方式——从 strrchr() 说起">
+                <i class="fa fa-chevron-left"></i> PHP 对字符串的处理方式——从 strrchr() 说起
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -331,6 +511,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -351,8 +535,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -419,6 +612,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是-PDO？"><span class="nav-number">1.</span> <span class="nav-text">什么是 PDO？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PDO-操作方法"><span class="nav-number">2.</span> <span class="nav-text">PDO 操作方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-连接"><span class="nav-number">2.1.</span> <span class="nav-text">1. 连接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-操作"><span class="nav-number">2.2.</span> <span class="nav-text">2. 操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#查询"><span class="nav-number">2.2.1.</span> <span class="nav-text">查询</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

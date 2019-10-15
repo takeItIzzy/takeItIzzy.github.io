@@ -4,7 +4,32 @@
   
     
     <entry>
-      <title>strrchr()</title>
+      <title>PDO 操作数据库</title>
+      <link href="/2019/10/15/PDO-%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+      <url>/2019/10/15/PDO-%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+      
+        <content type="html"><![CDATA[<h1 id="什么是-PDO？"><a href="#什么是-PDO？" class="headerlink" title="什么是 PDO？"></a>什么是 PDO？</h1><p>PDO 是一个数据抽象层，它抽象了诸如 MySQL、SQLite、PostgreSQL、SQL Server、Oracle 等主流的关系数据库，将这些数据库公有的特性，如连接、查询、预处理、数据取回等，封装成了统一的 API，对于 PHP 应用来说，可以不用关心使用的是哪种数据库。</p><h1 id="PDO-操作方法"><a href="#PDO-操作方法" class="headerlink" title="PDO 操作方法"></a>PDO 操作方法</h1><h2 id="1-连接"><a href="#1-连接" class="headerlink" title="1. 连接"></a>1. 连接</h2><p>连接数据库首先需要知道数据库的用户名和密码，还需要知道一个 dsn，描述了要用什么数据库，数据库的参数是什么。</p><p>然后 new 一个 PDO 对象，将 dsn 以及用户名和密码传过去，如果数据库连接成功，会返回一个 handle，我命名为 <code>$dbh</code>，通过 <code>$dbh</code>，就可以对数据库进行操作了。</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$username = <span class="string">'php'</span>;</span><br><span class="line">$password = <span class="string">'123'</span>;</span><br><span class="line">$dsn = <span class="string">'mysql:host=localhost:8087/mysql.php;dbname=myDB'</span>;</span><br><span class="line">$dbh = <span class="keyword">new</span> PDO($dsn, $username, $password);</span><br></pre></td></tr></table></figure><h2 id="2-操作"><a href="#2-操作" class="headerlink" title="2. 操作"></a>2. 操作</h2><h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><p>通过 <code>$dbh-&gt;query()</code> 方法，可以传一条 sql 语句到数据库，查询的结果会以数组的形式返回回来</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> PHP </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PHP 对字符串的处理方式——从 strrchr() 说起</title>
       <link href="/2019/08/27/strrchr/"/>
       <url>/2019/08/27/strrchr/</url>
       

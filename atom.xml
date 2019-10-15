@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.takeItIzzy.com/"/>
-  <updated>2019-08-27T08:10:53.565Z</updated>
+  <updated>2019-10-15T05:38:02.938Z</updated>
   <id>http://www.takeItIzzy.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>strrchr()</title>
+    <title>PDO 操作数据库</title>
+    <link href="http://www.takeItIzzy.com/2019/10/15/PDO-%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>http://www.takeItIzzy.com/2019/10/15/PDO-操作数据库/</id>
+    <published>2019-10-15T04:44:29.000Z</published>
+    <updated>2019-10-15T05:38:02.938Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="什么是-PDO？"><a href="#什么是-PDO？" class="headerlink" title="什么是 PDO？"></a>什么是 PDO？</h1><p>PDO 是一个数据抽象层，它抽象了诸如 MySQL、SQLite、PostgreSQL、SQL Server、Oracle 等主流的关系数据库，将这些数据库公有的特性，如连接、查询、预处理、数据取回等，封装成了统一的 API，对于 PHP 应用来说，可以不用关心使用的是哪种数据库。</p><h1 id="PDO-操作方法"><a href="#PDO-操作方法" class="headerlink" title="PDO 操作方法"></a>PDO 操作方法</h1><h2 id="1-连接"><a href="#1-连接" class="headerlink" title="1. 连接"></a>1. 连接</h2><p>连接数据库首先需要知道数据库的用户名和密码，还需要知道一个 dsn，描述了要用什么数据库，数据库的参数是什么。</p><p>然后 new 一个 PDO 对象，将 dsn 以及用户名和密码传过去，如果数据库连接成功，会返回一个 handle，我命名为 <code>$dbh</code>，通过 <code>$dbh</code>，就可以对数据库进行操作了。</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$username = <span class="string">'php'</span>;</span><br><span class="line">$password = <span class="string">'123'</span>;</span><br><span class="line">$dsn = <span class="string">'mysql:host=localhost:8087/mysql.php;dbname=myDB'</span>;</span><br><span class="line">$dbh = <span class="keyword">new</span> PDO($dsn, $username, $password);</span><br></pre></td></tr></table></figure><h2 id="2-操作"><a href="#2-操作" class="headerlink" title="2. 操作"></a>2. 操作</h2><h3 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h3><p>通过 <code>$dbh-&gt;query()</code> 方法，可以传一条 sql 语句到数据库，查询的结果会以数组的形式返回回来</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;什么是-PDO？&quot;&gt;&lt;a href=&quot;#什么是-PDO？&quot; class=&quot;headerlink&quot; title=&quot;什么是 PDO？&quot;&gt;&lt;/a&gt;什么是 PDO？&lt;/h1&gt;&lt;p&gt;PDO 是一个数据抽象层，它抽象了诸如 MySQL、SQLite、PostgreSQL、SQ
+      
+    
+    </summary>
+    
+      <category term="PHP" scheme="http://www.takeItIzzy.com/categories/PHP/"/>
+    
+    
+      <category term="PHP" scheme="http://www.takeItIzzy.com/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP 对字符串的处理方式——从 strrchr() 说起</title>
     <link href="http://www.takeItIzzy.com/2019/08/27/strrchr/"/>
     <id>http://www.takeItIzzy.com/2019/08/27/strrchr/</id>
     <published>2019-08-27T04:36:45.000Z</published>
-    <updated>2019-08-27T08:10:53.565Z</updated>
+    <updated>2019-10-15T04:46:03.030Z</updated>
     
     <content type="html"><![CDATA[<p>今天在学 PHP 字符串操作的时候写了这么一行代码</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"🍔🍟🍟🍔🥤"</span>, <span class="string">"🍟"</span>);</span><br></pre></td></tr></table></figure><p>我希望的是能输出 <code>🍟🍔🥤</code>，但其实输出了 <code>🥤</code>。</p><p>这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定<strong>子字符串</strong>在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。</p><blockquote><p>Find the last occurrence of a character in a string.<br>If needle contains more than one character, only the first is used.</p></blockquote><p>这是对于 strrchr() 函数的描述，重点在第二句。也就是说，strrchr() 函数的第二个参数是个<strong>字符</strong>而不是<strong>字符串</strong>。如果 strrchr() 函数的第二个参数传的是个字符串的话，将按照这个字符串的第一个字符查找。</p><p>举个例子：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> strrchr(<span class="string">"I like this movie, how about you?"</span>, <span class="string">"this"</span>);</span><br></pre></td></tr></table></figure><p>这行代码的本意是想输出 <code>this movie, how about you?</code>，但其实会输出 <code>t you?</code>，因为系统会只根据 <code>this</code> 字符串的第一个字符 <code>t</code> 进行查找，找到这句话中最后一个 <code>t</code>，并返回之后的字符串。</p><p>了解了 strrchr() 函数后，我们再来回到最开始的问题，为什么我在 <code>🍔🍟🍟🍔🥤</code> 中搜索 <code>🍟</code>，返回的是 <code>🥤</code> 呢？这就要说到 PHP 对于字符串的处理方式了。</p><ul><li>PHP 的字符串，是由字节组成的数组构成的，类似于 C 语言 <code>char a[3] = &quot;abc&quot;</code> 这样，一个字符占一个字节。</li><li>除此之外，PHP 并没有存储文本的编码信息，也就是说，PHP 并不知道这些字符串的二进制数据，应该对应怎样的编码。</li><li>PHP 并不保存字符串的编码信息。所以即便 <code>🍟</code> 保存为 <code>f09f8d9f</code>，在字符串原生函数看来，都只是一串二进制数，所以，PHP 原生字符串函数只能操作单字节字符，也就是把一个字节当作一个字符来处理。</li></ul><p>知道了这些，就能看懂上面的例子了。我们可以通过 bin2hex() 函数将字符串转为 16 进制数，<code>🍔🍟🍟🍔🥤</code> 被转为了 <code>f09f8d94f09f8d9ff09f8d9ff09f8d94f09fa5a4</code>。我们将 <code>🍟</code> 也用 bin2hex() 转换，得到结果为 <code>f09f8d9f</code>。将这个结果转为二进制数，即 <code>11110000100111111000110110011111</code>。我们现在知道，即使将 strrchr() 函数的第二个参数填为 <code>🍟</code>，其实 PHP 也并不会搜索 <code>🍟</code>，而会搜索 <code>🍟</code> 中第一个字节的字符，即 <code>11110000</code> 所代表的 <code>f0</code>，然后返回 <code>f0</code> 之后直到结束的所有字符，也就是 <code>f09fa5a4</code>，也就是 <code>🥤</code>。</p><p>这就是为什么在 <code>🍔🍟🍟🍔🥤</code> 中搜索 <code>🍟</code>，返回的却是 <code>🥤</code> 的原因了。</p><p>其实因为不支持 Unicode，PHP 的 string 函数都有这个问题，而解决方法是使用 mb_*() 函数，通过设置不同的编码来操作多字节字符串。</p><p>我们将最开始的代码改成这样：</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> mb_strrchr(<span class="string">"🍔🍟🍟🍔🥤"</span>, <span class="string">"🍟"</span>);</span><br></pre></td></tr></table></figure><p>这样就可以正确输出 <code>🍟🍔🥤</code> 了。</p><p>参考资料：</p><ul><li><a href="http://webkit.cc/post/php-and-unicode.html" target="_blank" rel="noopener">http://webkit.cc/post/php-and-unicode.html</a></li><li><a href="https://juejin.im/post/5c00b31a5188251d9e0c4a59" target="_blank" rel="noopener">https://juejin.im/post/5c00b31a5188251d9e0c4a59</a></li></ul>]]></content>
     

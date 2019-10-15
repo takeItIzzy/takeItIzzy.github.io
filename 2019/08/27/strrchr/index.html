@@ -91,14 +91,14 @@
 <meta name="description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出 🍟🍔🥤，但其实输出了 🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the">
 <meta name="keywords" content="PHP,易错点">
 <meta property="og:type" content="article">
-<meta property="og:title" content="strrchr()">
+<meta property="og:title" content="PHP 对字符串的处理方式——从 strrchr() 说起">
 <meta property="og:url" content="http://www.takeItIzzy.com/2019/08/27/strrchr/index.html">
 <meta property="og:site_name" content="Zhao.Yuxuan">
 <meta property="og:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出 🍟🍔🥤，但其实输出了 🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-27T08:10:53.565Z">
+<meta property="og:updated_time" content="2019-10-15T04:46:03.030Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="strrchr()">
+<meta name="twitter:title" content="PHP 对字符串的处理方式——从 strrchr() 说起">
 <meta name="twitter:description" content="今天在学 PHP 字符串操作的时候写了这么一行代码 1echo strrchr(&quot;🍔🍟🍟🍔🥤&quot;, &quot;🍟&quot;);  我希望的是能输出 🍟🍔🥤，但其实输出了 🥤。 这是怎么回事呢？我本来以为 strrchr() 的作用是查找指定子字符串在字符串中最后一次出现的位置，然后将字符串这个位置之后的所有字符返回（包含这个子字符串），然而上网上查了下资料，发现并不是这样。  Find the">
 
 
@@ -135,7 +135,7 @@
 
 
 
-  <title>strrchr() | Zhao.Yuxuan</title>
+  <title>PHP 对字符串的处理方式——从 strrchr() 说起 | Zhao.Yuxuan</title>
   
 
 
@@ -322,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">strrchr()</h1>
+          <h1 class="post-title" itemprop="name headline">PHP 对字符串的处理方式——从 strrchr() 说起</h1>
         
 
         <div class="post-meta">
@@ -451,11 +451,11 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/08/27/strrchr/">strrchr()</a></p>
+  <p><span>本文标题:</span><a href="/2019/08/27/strrchr/">PHP 对字符串的处理方式——从 strrchr() 说起</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhao.Yuxuan 的个人博客">Zhao.Yuxuan</a></p>
   <p><span>发布时间:</span>2019年08月27日 - 12:08</p>
-  <p><span>最后更新:</span>2019年08月27日 - 16:08</p>
-  <p><span>原始链接:</span><a href="/2019/08/27/strrchr/" title="strrchr()">http://www.takeItIzzy.com/2019/08/27/strrchr/</a>
+  <p><span>最后更新:</span>2019年10月15日 - 12:10</p>
+  <p><span>原始链接:</span><a href="/2019/08/27/strrchr/" title="PHP 对字符串的处理方式——从 strrchr() 说起">http://www.takeItIzzy.com/2019/08/27/strrchr/</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.takeItIzzy.com/2019/08/27/strrchr/" aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
@@ -511,6 +511,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/10/15/PDO-操作数据库/" rel="prev" title="PDO 操作数据库">
+                PDO 操作数据库 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -578,7 +582,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
